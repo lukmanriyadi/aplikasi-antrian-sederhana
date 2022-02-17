@@ -1,4 +1,4 @@
-## aplikasi antrian sederhana
+# Welcome to simple queue app
 
 Aplikasi antrian sederhana, yang menerapkan multi _counter_ dan juga multi _service_
 dimana setiap _counter_ bisa menangani antrian lebih dari 1 _service_. dan memiliki banyak _counter_.
@@ -19,10 +19,17 @@ akun untuk login :
 note :
 
 -   pada route **_/audio_** akan berusaha menjalankan audio secara otomatis jika ada. maka perhatikan juga akses autoplay di browser kalian.
--   pada kolom **code** di table **_services_** harus memiliki **.** (titik) pada akhirnya. ini diperlukan untuk memisahkan antara huruf dan angka pada queue number nantinya.
+-   pada kolom **/code** di table **/service** menggunakan titik(.) di akhir yang nantinya digunakan untuk pemisah antara code dan nomor
 
-### Demo
+## Instalasi
 
-video penjelasan : https://youtu.be/QqDOnenfd9w
+-   composer install
+-   setup env database dan generate key
+-   buat symbolic link
+-   buat folder **queue** dan **audio** di folder **storage/app/public/**
+-   download dan copy audio file dari https://drive.google.com/file/d/1CMIFnM3pvltX1Nmi_vAlfpNMaWZsY5d5/view?usp=sharing ke folder **audio**
+-   migrasi database dan seeder
 
-list route
+## Demo
+
+video penjelasan penggunaan : https://youtu.be/QqDOnenfd9w
